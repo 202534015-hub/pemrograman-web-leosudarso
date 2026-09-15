@@ -3,17 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Leo</title>
+    <title>Profil Leosudarso Welerubun</title>
 </head>
+
 <body>
-    <h1>Leosudarso Welerubun</h1>
-    <p>Saya berasal dari Maluku Tenggara</p>
-    <p>Alasan saya web development karena ingin memahami cara membuat website dan mengembangkan kemampuan di bidang teknologi.</p>
-    <h2>"Ora Et Labora"</h2>
-    <p>Kutipan ini menjadi prinsip hidup saya sebab
-       Kerja dipandang sebagai bentuk pelayanan dan sarana untuk melawan kemalasan,
-       sementara doa mengandalkan penyertaan Tuhan atas setiap usaha yang dilakukan.
-    </p>
-    <p>Saya ingin terus belajar dan mengembangkan kemampuan saya di bidang web development.</p>
+    <header>
+        <h1>Leosudarso Welerubun</h1>
+        <p>Profil pribadi dan informasi tentang saya.</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <ul>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#hobi">Hobi</a></li>
+            <li><a href="#keterampilan">Keterampilan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+
+           <img
+    src="images/Leosudarso.jpeg"
+    alt="Foto Leosudarso Welerubun"
+    width="300"
+>
+
+            <p>Saya berasal dari Maluku Tenggara.</p>
+
+            <p>Saya lulusan SMK Mitra Karya Langgur.</p>
+
+            <p>
+                Alasan saya mempelajari web development karena ingin
+                memahami cara membuat website dan mengembangkan kemampuan
+                di bidang teknologi.
+            </p>
+        </section>
+
+        <section id="hobi">
+            <h2>Hobi 💡</h2>
+
+            <ul>
+                <li>Menyanyi</li>
+                <li>Tidur</li>
+                <li>Main gitar</li>
+            </ul>
+        </section>
+
+        <section id="keterampilan">
+            <h2>Keterampilan 😎</h2>
+
+            <ul>
+                <li>Kesenian</li>
+            </ul>
+        </section>
+
+        <section id="kontak">
+            <h2>Form Kontak</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="nama">Nama:</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        autocomplete="name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="pesan">Pesan:</label>
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        rows="5"
+                        required
+                    ></textarea>
+                </p>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Leosudarso Welerubun</p>
+
+        <p>
+            <a href="https://www.w3schools.com/">
+                Belajar HTML di W3Schools
+            </a>
+        </p>
+    </footer>
 </body>
 </html>
