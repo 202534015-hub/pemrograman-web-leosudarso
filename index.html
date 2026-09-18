@@ -4,33 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Leosudarso Welerubun</title>
-    <meta name="description" content="Profil pribadi Leosudarso Welerubun tentang latar belakang, hobi, keterampilan, dan kontak.">
+    <meta
+        name="description"
+        content="Profil pribadi Leosudarso Welerubun tentang latar belakang, hobi, keterampilan, dan kontak."
+    >
 </head>
 
 <body>
     <header>
         <h1>Leosudarso Welerubun</h1>
+
         <p>Profil pribadi dan informasi tentang saya.</p>
+
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="#tentang">Tentang Saya</a></li>
+                <li><a href="#hobi">Hobi</a></li>
+                <li><a href="#keterampilan">Keterampilan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav aria-label="Navigasi utama">
-        <ul>
-            <li><a href="#tentang">Tentang Saya</a></li>
-            <li><a href="#hobi">Hobi</a></li>
-            <li><a href="#keterampilan">Keterampilan</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section id="tentang">
+        <article id="tentang">
             <h2>Tentang Saya</h2>
 
-           <img
-    src="images/Leosudarso.jpeg"
-    alt="Foto Leosudarso Welerubun"
-    width="300"
->
+            <img
+                src="images/Leosudarso.jpeg"
+                alt="Foto Leosudarso Welerubun"
+                width="300"
+            >
 
             <p>Saya berasal dari Maluku Tenggara.</p>
 
@@ -41,7 +45,7 @@
                 memahami cara membuat website dan mengembangkan kemampuan
                 di bidang teknologi.
             </p>
-        </section>
+        </article>
 
         <section id="hobi">
             <h2>Hobi 💡</h2>
@@ -61,45 +65,45 @@
             </ul>
         </section>
 
-        <section id="kontak">
-            <h2>Form Kontak</h2>
+       <section id="kontak">
+    <h2>Form Kontak</h2>
 
-            <form action="#" method="post">
-                <p>
-                    <label for="nama">Nama:</label>
-                    <input
-                        type="text"
-                        id="nama"
-                        name="nama"
-                        autocomplete="name"
-                        required
-                    >
-                </p>
+    <form action="#" method="post">
+        <div>
+            <label for="nama">Nama Lengkap</label>
+            <input
+                id="nama"
+                name="nama"
+                type="text"
+                autocomplete="name"
+                required
+            >
+        </div>
 
-                <p>
-                    <label for="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        autocomplete="email"
-                        required
-                    >
-                </p>
+        <div>
+            <label for="email">Alamat Email</label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+            >
+        </div>
 
-                <p>
-                    <label for="pesan">Pesan:</label>
-                    <textarea
-                        id="pesan"
-                        name="pesan"
-                        rows="5"
-                        required
-                    ></textarea>
-                </p>
+        <div>
+            <label for="pesan">Pesan</label>
+            <textarea
+                id="pesan"
+                name="pesan"
+                minlength="10"
+                required
+            ></textarea>
+        </div>
 
-                <button type="submit">Kirim</button>
-            </form>
-        </section>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</section>
     </main>
 
     <footer>
